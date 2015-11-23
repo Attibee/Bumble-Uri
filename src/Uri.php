@@ -17,12 +17,17 @@
 
 namespace Bumble\Uri;
 
+/**
+ * Representation of URI including getters and setters to access and mutate the URI.
+ * 
+ * Represents a URI. The URI class contains methods to access and mutate the data. The
+ * Uri class is a standard interface passed to the various Bumble\Uri classes.
+ */
 class Uri {
     private $protocol = null;
     private $username = null;
     private $password = null;
-    private $domain = null;
-    private $tld = null;
+    private $host = null;
     private $port = null;
     private $path = null;
     private $query = null;
@@ -40,8 +45,8 @@ class Uri {
         $this->password = $value;
     }
 
-    public function setDomain( $value ) {
-        $this->domain = $value;
+    public function setHost( $value ) {
+        $this->host = $value;
     }
     
     public function setTld( $value ) {
@@ -76,8 +81,8 @@ class Uri {
         return $this->password;
     }
     
-    public function getDomain() {
-        return $this->domain;
+    public function getHost() {
+        return $this->host;
     }
 
     public function getTld() {
