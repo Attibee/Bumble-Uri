@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-namespace Attibee\Uri;
+namespace Bumble\Uri;
 
 class Uri {
     private $protocol = null;

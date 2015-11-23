@@ -1,4 +1,4 @@
 <?php
-namespace Attibee\Exception\InvalidUri;
+namespace Bumble\Exception\InvalidUri;
 
 class InvalidUri extends Exception {}

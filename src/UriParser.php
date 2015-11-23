@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-namespace Attibee\Uri;
+namespace Bumble\Uri;
 
 /**
  * Parses a URI into its components. Additionally, this will validate a URI. If the
